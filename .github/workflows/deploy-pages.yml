@@ -30,6 +30,8 @@ jobs:
           mkdir -p _site
           cp "MARKIT B2B Platform.html" _site/index.html
           cp -R assets _site/assets
+          mkdir -p _site/workflow-map
+          cp "MARKIT_Phase_1_Workflow_Map.html" _site/workflow-map/index.html
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
